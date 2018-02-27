@@ -3,15 +3,37 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/marked/0.3.15/marked.min.js"></script>
     <title>LennaHammer's Home Page</title>
+        <script type="text/javascript">
+         (function(){ 
+          var s = window.location.search;
+
+          $(document).ready(function(){
+            var file = "files/index.md";
+            if(s[0]=='?'){
+              file = "files/"+s.slice(1);
+            }
+$.get(file , function(data) {
+  $( ".result" ).html(marked(data));
+  $('.result a').each((k,v)=>{
+if(v['href'].slice(-3)=='.md'){
+v['href']="?"+v['href'].split('/').slice(3).join("/");}
+  });
+});
+
+});})();
+
+    </script>
   </head>
 
   <body>
-<pre>
-正文
+    <div class='result'></div>
 
-友情链接
-</pre>
+
+
+
 
   </body>
 </html>
