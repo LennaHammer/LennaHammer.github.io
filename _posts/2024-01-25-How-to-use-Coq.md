@@ -3,7 +3,7 @@
 
 # Coq Tactics Cheatsheet
 
-This is the first post in the Lena’s Blog series. I once wanted to create a new blog to talk about trivial things related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So temporarily, a hashtag here was used to set sail.
+This is the first post in the Lena's Blog series. I once wanted to create a new blog to talk about trivial stuff related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So temporarily, a hashtag here was used to set sail.
 
 This post is just to list useful tactics commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough.
 
@@ -14,6 +14,7 @@ Coq is a system to check proving, mostly for math. It can also be seen as a prog
  
 For example, we can write a program with a function like "f(x)=x+1". When the computer executes this function, it reads an input like 1 and then performs the computation to output the result, which is 2. This is how a general-purpose programming language works. However, in a theorem prover system like Coq, which provides a typed functional programming language, the way of programming is completely different. Assuming we have a mathematical expression such as "x>1", we can write a function by simply applying the definition of "natural number" and "greater than" operation to return a new expression such as "x>0". The process of constructing a new expression is equivalent to writing a proof of a new theorem. The compiler is responsible for checking the correctness of the proof according to whether the variables of the program are well typed for obtaining the final result.
 
+## How to use Coq?
  
 There are three aspects that make the use of this system very confusing: 1. the approach of using the interactive mode besides the programming language 2. the distinction between backward interactive mode and forward explicit writing proof. and 3. the gap between the rules of the logic system for analyzing the natural language and the underlying type system of the programming language to be checked. We will discuss these in detail in the following section, before listing the most common commands for using this system to assist us in proving a theorem.
 
@@ -26,7 +27,7 @@ Secondly, the most confusing thing about the interactive proof mode of this syst
  
 Thirdly, the most commonly used logical systems in everyday life are propositional and predicate logic, which can be easily translated from natural language. Propositional logic includes logical connectives such as 'and', 'or', 'not', and 'implies', while predicate logic involves quantifiers such as 'for all' and 'exists', and predicates such as 'equal to' and 'greater than'. They also contain several rules for evaluating expressions. However, Coq uses a dependent type system that, though looks different, is isomorphic to the traditional logic system. In Coq, commands are applied directly to the type system rather than the logic. There are two approaches to addressing this gap: translating the logical expression to the type system and using the corresponding commands, or selecting commands directly for each logical connective or quantifier without knowledge of how these logical operations are implemented in the type system. The following paragraphs will utilize the second approach.
 
-## 
+## Commands and Tactics
  
 Implementing a function with a particular type annotation is equivalent to proving the declared type exists. Calling a function is the same as applying a rule. That's how the theorem-proving system works.
 
@@ -53,7 +54,8 @@ Tactics:
 
 also see https://coq.inria.fr/tutorial/
 
- 
+## Logical Systems
+
 Let's demonstrate some examples of propositional logic using only some very simple logical connectives such as '->', '/\', '\/', '\~'. We can apply the rules of the type system listed above to these operators, but please forget the connection between them and just think about what we want to do with these connectives and what rules are established for them. Note that a logical connective can appear in either the premise or the conclusion, and that by default Coq's commands are applied backwards to the target, i.e. the target is changed to the left part of a "->" rule. When we apply a rule to the premise, as we often do, we need to specify which premise to apply, and we get a new premise forward. To summarize, for '->' we use 'apply' in the conclusion or 'intros' in the premise. Similarly, for '/\' and '\/' we use 'constructor' in the conclusion or 'destruct' in the premise as a convenient alternative. For '\~' we need 'destruct' and 'Require Import Classical' similar to '->'.
 
  
