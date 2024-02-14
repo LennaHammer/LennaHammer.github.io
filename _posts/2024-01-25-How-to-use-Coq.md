@@ -17,30 +17,10 @@ For example, we can write a program with a function like "f(x)=x+1". When the co
  
 There are three aspects that make the use of this system very confusing: 1. the approach of using the interactive mode besides the programming language 2. the distinction between backward interactive mode and forward explicit writing proof. and 3. the gap between the rules of the logic system for analyzing the natural language and the underlying type system of the programming language to be checked. We will discuss these in detail in the following section, before listing the most common commands for using this system to assist us in proving a theorem.
 
-翻译
-
-1
-
-
-
-
-1月26日 *
-lennahammer
-蕾娜今天吃什么呀
-@lennahammer
+ 
 Firstly, we can construct a proposition expression directly by writing a long nested mathematical expression, but for ease of use, the system provides another simple way of writing proofs, which is the interactive proof mode. In this mode, we can write proofs step by step using commands called Tactics. The most basic command is "apply", which is used when we have a fact A, applying a rule "A->B", implemented as a function in this system, will produce a new fact B, which may be what we want. During the evolution of the version, Coq offers new different commands for a similar purpose with slight differences that are, however, translated to the same underlying program to be checked. In this way, when thinking about the process of proof, we only need to care about the steps we are doing, ignoring the specific commands used in the program. And for a goal, we only need one most powerful version of commands that we know well in order to perform each type of proof step.
 
-翻译
-
-1
-
-
-
-
-1月26日 *
-lennahammer
-蕾娜今天吃什么呀
-@lennahammer
+ 
 Secondly, the most confusing thing about the interactive proof mode of this system is that it's written backwards, which means that when you start a proof, the goal is shown on the screen with the local variables above the goal, and the commands given by the user are applied by default to the goal instead of the input arguments as usual programming language. For example, for the fact "A/\B" in the goal, we apply the constructor of "/\", which is "A->B->A/\B", replacing the goal with two new subgoals A and B to be proved later. Yes, when we construct a predicate, it disappears because of the backward proof. During the proof, the goal is implicit in the context, making the program code hard to read unless you run it step by step again in this system. So in my suggestion, as we usually do when writing a math proof, write the program forward, and label the subgoal explicitly for the variables produced in the code.
 
  
