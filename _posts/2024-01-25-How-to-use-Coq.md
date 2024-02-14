@@ -1,15 +1,16 @@
 ---
+layout: post
 ---
 
 # Coq Tactics Cheatsheet
 
 This is the first post in the Lena's Blog series. I once wanted to create a new blog to talk about trivial stuff related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So temporarily, a hashtag here was used to set sail.
 
-This post is just to list useful tactics commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough.
+This post is just to list useful tactics commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough. Therefore I still want to find some real use cases to show the challange and power of proof.
 
 ## What is Coq?
 
-Coq is a system to check proving, mostly for math. It can also be seen as a programming language as well (I know it has another name, but it's not important). In most programming languages, program is designed to perform calculations, which will calculate the result from the input we typed following the command list stored in the machine. However, there is a totally different way to use a programming language that we can use to write theorems proving steps. By running the compiler to check the input code, we can determine if the theorem we 'constructed' in the code is written correctly or not.
+Coq is a system to check proving, mostly for math. It can also be seen as a programming language as well (I know it has another name for this part, but it's not important). In most programming languages, program is designed to perform calculations, which will calculate the result from the input we typed following the command list stored in the machine. However, there is a totally different way to use a programming language that we can use to write theorems proving steps. By running the compiler to check the input code, we can determine if the theorem we 'constructed' in the code is written correctly or not.
 
  
 For example, we can write a program with a function like "f(x)=x+1". When the computer executes this function, it reads an input like 1 and then performs the computation to output the result, which is 2. This is how a general-purpose programming language works. However, in a theorem prover system like Coq, which provides a typed functional programming language, the way of programming is completely different. Assuming we have a mathematical expression such as "x>1", we can write a function by simply applying the definition of "natural number" and "greater than" operation to return a new expression such as "x>0". The process of constructing a new expression is equivalent to writing a proof of a new theorem. The compiler is responsible for checking the correctness of the proof according to whether the variables of the program are well typed for obtaining the final result.
@@ -29,13 +30,9 @@ There are three aspects that make the use of this system very confusing: 1. the 
 
 ## Commands and Tactics
  
-Implementing a function with a particular type annotation is equivalent to proving the declared type exists. Calling a function is the same as applying a rule. That's how the theorem-proving system works.
+Implementing a function with a particular type annotation is equivalent to proving the declared type exists. Calling a function is the same as applying a rule. That's how the theorem-proving system works. Coq is one of these systems that includes a programming language based on typed lambda calculus, so no matter what commands or tactics we use in proof mode, they will eventually be translated into the basic functions checked by the compiler, as function is the only element used to describe the world. 
 
-Coq is one of these systems that includes a programming language based on typed lambda calculus, so no matter what commands or tactics we use in proof mode, they will eventually be translated into the basic functions checked by the compiler, as function is the only element used to describe the world. 
-
-Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, so the tactic is only implemented for convenience, the amount of which is infinite. It's unnecessary and impossible to know all the built-in ones.
-
-The details will be explained later with examples focusing on the intuition of how to draw the conclusion rather than writing proof.
+Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones. The details will be explained later with examples focusing on the intuition of how to draw the conclusion rather than writing proof.
 
  
 Commands:
