@@ -157,7 +157,7 @@ Qed.
 
 ```
 
-or we can define it using inductive type and the use it in the same way:
+or we can define them using inductive type and then use them in the same way:
 
 ```Coq
 Inductive parent (x y: Prop): Prop :=
