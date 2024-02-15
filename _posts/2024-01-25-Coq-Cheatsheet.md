@@ -95,8 +95,8 @@ Tactics:
 1. Basic: apply, apply in, apply with, intro.
    - exact/assumption/trivial/auto, contradiction, generalize.
 2. Forward: set, assert/enough.
-3. Equalities: reflexivity/symmetry/transitivity, rewrite/replace, simpl, unfold.
-4. Inductive types:
+3. Equality: reflexivity/symmetry/transitivity, rewrite/replace, simpl/unfold.
+4. Inductive type:
    - constructor/split/left/right/exists.
    - destruct/case, induction/elim.
 5. Equality of inductive types: f_equal, discriminate, injection, inversion.
@@ -144,10 +144,10 @@ In predicate logic, we can use a predicate to describe the property of an elemen
 For example, we can define a relation and prove as follows:
 
 ```
-Axiom mother father parent:Prop->Prop->Prop.
-Axiom rule1: forall x y:Prop,mother x y->parent x y.
-Axiom rule2: forall x y:Prop,father x y->parent x y.
-Axiom A B:Prop.
+Axiom mother father parent: Prop -> Prop -> Prop.
+Axiom rule1: forall x y: Prop, mother x y -> parent x y.
+Axiom rule2: forall x y: Prop, father x y -> parent x y.
+Axiom A B: Prop.
 Axiom fact1: mother A B.
 Theorem fact2: parent A B.
 Proof.
@@ -157,10 +157,10 @@ Qed.
 
 ```
 
-or we can define it using inductive type:
+or we can define it using inductive type and the use it in the same way:
 
 ```Coq
-Inductive parent (x y:Prop):Prop:=
+Inductive parent (x y: Prop): Prop :=
   | mother: x -> y -> parent x y
   | father: x -> y -> parent x y.
 ```
