@@ -3,11 +3,7 @@ layout: post
 title:  "Prove a theorem using programming language"
 ---
 
-<style>
-p {
-    text-align: justify;
-}
-</style>
+<style>div{text-align:justify;}</style>
 
 # Coq Tactics Cheatsheet
 
