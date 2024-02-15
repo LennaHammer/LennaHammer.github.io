@@ -54,8 +54,11 @@ Similarly, a proof can be written as follows:
 Theorem example1 : forall A B : Prop, A -> (A -> B) -> B.
 Proof.
   intros A B H1 H2.
-  apply H2.
-  apply H1.
+  (* H1 : A *)
+  (* H2 : A->B *)
+  apply H2. 
+  (* H1 : B *)
+  apply H1. 
 Qed.
 
 (* forward *)
