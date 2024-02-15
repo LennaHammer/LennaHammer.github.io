@@ -50,8 +50,7 @@ The function 'f' defined as lambda first is then applied with argument '100', an
 Similarly, a proof can be written as follows:
 
 ```
-(* backward *)
-Theorem example1 : forall A B : Prop, A -> (A -> B) -> B.
+Theorem backward: forall A B : Prop, A -> (A -> B) -> B.
 Proof.
   intros A B H1 H2.
   (* H1 : A *)
@@ -61,8 +60,7 @@ Proof.
   apply H1. 
 Qed.
 
-(* forward *)
-Theorem example2 : forall A B : Prop, A -> (A -> B) -> B.
+Theorem forward : forall A B : Prop, A -> (A -> B) -> B.
 Proof.
   intros A B H1 H2.
   apply H2 in H1 as H3. (* equal to `set (H3 := H2 H1).` *) 
@@ -70,6 +68,7 @@ Proof.
 Qed.
 ```
 
+The variable names can be omitted, although this is not recommended.
 
 ## Commands and Tactics
  
