@@ -1,15 +1,16 @@
 ---
 layout: post
 title:  "Prove a theorem using programming language"
+author: "Lenna Hammer"
 ---
 
 <style>div{text-align:justify;}</style>
 
-# Coq Tactics Cheatsheet
+<!-- # Coq Tactics Cheatsheet -->
 
 This is the first post in the Lena's Blog series. I once wanted to create a new blog to talk about trivial stuff related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So I temporarily wrote them on Mastodon with a hashtag, which are now organized into Github pages.
 
-This post is just to list useful tactics commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough. Therefore I still want to find some real use cases to show the challenge and power of proof.
+This post is just to list useful tactics and commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough. Therefore I still want to find some real use cases to show the challenge and power of proof.
 
 ## What is Coq?
 
@@ -78,7 +79,7 @@ The variable names can be omitted, although this is not recommended.
  
 Implementing a function with a particular type annotation is equivalent to proving the declared type exists. Calling a function is the same as applying a rule. That's how the theorem-proving system works. Coq is one of these systems that includes a programming language based on typed lambda calculus, so no matter what commands or tactics we use in proof mode, they will eventually be translated into the basic functions checked by the compiler, as function is the only element used to describe the world. 
 
-Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones. The details will be explained later with examples focusing on the intuition of how to draw the conclusion rather than writing proof.
+Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones and sometimes they do the same things. The details will be explained later with examples focusing on the intuition of how to draw the conclusion rather than writing proof.
 
 In addition to the "imply" relation, equality is another important relation that requires special attention. 
 
