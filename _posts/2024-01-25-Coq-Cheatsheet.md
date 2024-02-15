@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coq Tactics Cheatsheet"
+title:  "Prove a theorem using programming language"
 ---
 
 <style>
