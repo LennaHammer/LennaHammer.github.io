@@ -82,7 +82,8 @@ In addition to the "imply" relation, equality is another important relation that
 
 Inductive types, a small extension of the typed lambda calculus for convenience, can be used to construct something of new types and are also often used with pattern matching to deal with multiple cases or to get the element of a record as well, which are mainly used for defining predicates. Some axioms and rules are automatically defined for the new types.
 
- 
+### The Cheatsheet
+
 Commands:
 1. Axiom, Theorem, Definition, Fixpoint, Inductive, Proof.
 2. Print, Search, Require Import.
@@ -136,6 +137,56 @@ Qed.
 ### Predicate Logic
  
 In predicate logic, we can use a predicate to describe the property of an element or the relation between elements, and sometimes we can talk about an abstract concept with only certain properties without knowing what it is. In Coq, we can use the axiom command to define a predicate, but since this definition can be used directly to construct a factor, which we don't want to do because it is dangerous to construct without proof, we have to make sure that we only define some rules to get the factor and deal with it. Furthermore, a factor can be constructed using multiple rules, which can be reasoned by case if it's in the hypothesis, or defined by recursion, which can be reasoned by mathematical induction (Coq uses the first argument by default, which can sometimes seem confusing as it's implicit) if it's in the predicate of goal. For example, the Peano number is defined by zero and its successor. If we prove two cases for it, we know that a property will be true for all natural numbers.
- 
 
+For example, we can define a relation and prove as follows:
+
+```
+Axiom mother father parent:Prop->Prop->Prop.
+Axiom rule1: forall x y:Prop,mother x y->parent x y.
+Axiom rule2: forall x y:Prop,father x y->parent x y.
+Axiom A B:Prop.
+Axiom fact1: mother A B.
+Theorem fact2: parent A B.
+Proof.
+  apply rule1.
+  apply fact1.
+Qed.
+
+```
+
+or we can define it using inductive type:
+
+```Coq
+Inductive parent (x y:Prop):Prop:=
+  | mother: x -> y -> parent x y
+  | father: x -> y -> parent x y.
+```
+
+TODO
+
+```Coq
+Inductive nat : Type :=
+  | O : nat
+  | S : nat -> nat.
+```
+
+## Application
+
+
+TODO
+
+## Other ATP
+
+
+TODO
+
+## Conclusion
+
+TODO
+
+## Appendix
+
+
+
+TODO
 
