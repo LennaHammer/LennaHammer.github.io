@@ -3,6 +3,12 @@ layout: post
 title:  "Coq Tactics Cheatsheet"
 ---
 
+<style>
+div {
+    text-align: justify,
+}
+</style>
+
 # Coq Tactics Cheatsheet
 
 This is the first post in the Lena's Blog series. I once wanted to create a new blog to talk about trivial stuff related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So I temporarily wrote them on Mastodon with a hashtag, which are now organized into Github pages.
@@ -190,3 +196,4 @@ TODO
 
 TODO
 
+{: style="text-align: justify" }
