@@ -39,6 +39,35 @@ We will discuss these in detail in this section, before listing the most common 
 
 Compared to similar provers, the advantage of Coq is that it can also be used as a normal functional programming language with lambda, apply, and pattern match. We can use it to implement some algorithms and prove some properties of that code using the same language in the same environment, although for historical reasons Coq codes are often written in a style that is hard to read for mathematical proof.
 
+For example, we can sum from 0 to 100 as follows:
+
+```Coq
+Compute (let fix f x:nat := match x with 0 => 0 | S x => S x + f x end in f 100).
+```
+
+The function 'f' defined as lambda first is then applied with argument '100', and the calculation is divided into two cases with pattern match and recursion.
+
+Similarly, a proof can be written as follows:
+
+```
+(* backward *)
+Theorem example1 : forall A B : Prop, A -> (A -> B) -> B.
+Proof.
+  intros A B H1 H2.
+  apply H2.
+  apply H1.
+Qed.
+
+(* forward *)
+Theorem example2 : forall A B : Prop, A -> (A -> B) -> B.
+Proof.
+  intros A B H1 H2.
+  apply H2 in H1 as H3. (* equal to `set (H3 := H2 H1).` *) 
+  apply H3.
+Qed.
+```
+
+
 ## Commands and Tactics
  
 Implementing a function with a particular type annotation is equivalent to proving the declared type exists. Calling a function is the same as applying a rule. That's how the theorem-proving system works. Coq is one of these systems that includes a programming language based on typed lambda calculus, so no matter what commands or tactics we use in proof mode, they will eventually be translated into the basic functions checked by the compiler, as function is the only element used to describe the world. 
@@ -60,7 +89,7 @@ Tactics:
    - destruct/case, induction/elim.
 5. Equality of inductive types: f_equal, discriminate, injection, inversion.
 
-see also https://coq.inria.fr/tutorial/ for more information
+See also https://coq.inria.fr/tutorial/ for more information.
 
 ## Logical Systems
 
@@ -75,24 +104,24 @@ Here's the code that needed to be checked step by step in Coq(or a browser-based
 ```Coq
 Theorem t1:forall A B:Prop,A/\B->B.
 Proof.
-intros.
-destruct H.
-apply H0.
+  intros.
+  destruct H.
+  apply H0.
 Qed.
 
 Theorem t2:forall A B:Prop,A->A\/B.
 Proof.
-intros.
-constructor.
-assumption.
+  intros.
+  constructor.
+  assumption.
 Qed.
 
 Theorem t3:forall A B:Prop,(A/\(A->B))->B.
 Proof.
-intros.
-destruct H.
-apply H0 in H.
-exact H.
+  intros.
+  destruct H.
+  apply H0 in H.
+  exact H.
 Qed.
 ```
 
