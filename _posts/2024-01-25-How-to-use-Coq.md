@@ -4,29 +4,39 @@ layout: post
 
 # Coq Tactics Cheatsheet
 
-This is the first post in the Lena's Blog series. I once wanted to create a new blog to talk about trivial stuff related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So temporarily, a hashtag here was used to set sail.
+This is the first post in the Lena's Blog series. I once wanted to create a new blog to talk about trivial stuff related to computer science, but I found it difficult to find a hosting service or establish a blog from scratch by myself. So I temporarily wrote them on Mastodon with a hashtag, which are now organized into Github pages.
 
-This post is just to list useful tactics commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough. Therefore I still want to find some real use cases to show the challange and power of proof.
+This post is just to list useful tactics commands for Coq as a cheat sheet. Frankly speaking, I've only used them for the exercises in the textbook and tutorial, not for any real project. It's only in the real case to know which is an essential part of the system, even if it's simple enough. Therefore I still want to find some real use cases to show the challenge and power of proof.
 
 ## What is Coq?
 
-Coq is a system to check proving, mostly for math. It can also be seen as a programming language as well (I know it has another name for this part, but it's not important). In most programming languages, program is designed to perform calculations, which will calculate the result from the input we typed following the command list stored in the machine. However, there is a totally different way to use a programming language that we can use to write theorems proving steps. By running the compiler to check the input code, we can determine if the theorem we 'constructed' in the code is written correctly or not.
+Coq is a system to check proving, mostly for math. It can also be seen as a programming language as well (I know it has another name for this part, but it's not important). In most programming languages, the program is designed to perform calculations, which will calculate the result from the input we typed following the command list stored in the machine. However, there is a totally different way to use a programming language that we can use to write theorems proving steps. By running the compiler to check the input code, we can determine if the theorem we 'constructed' in the code is written correctly or not.
 
  
-For example, we can write a program with a function like "f(x)=x+1". When the computer executes this function, it reads an input like 1 and then performs the computation to output the result, which is 2. This is how a general-purpose programming language works. However, in a theorem prover system like Coq, which provides a typed functional programming language, the way of programming is completely different. Assuming we have a mathematical expression such as "x>1", we can write a function by simply applying the definition of "natural number" and "greater than" operation to return a new expression such as "x>0". The process of constructing a new expression is equivalent to writing a proof of a new theorem. The compiler is responsible for checking the correctness of the proof according to whether the variables of the program are well typed for obtaining the final result.
+For example, we can write a program with a function like "f(x)=x+1". When the computer executes this function, it reads an input like 1 and then performs the computation to output the result, which is 2. This is how a general-purpose programming language works. However, in a theorem prover system like Coq, which provides a typed functional programming language, the way of programming is completely different. Assuming we have a mathematical expression such as "x>1", we can write a function by simply applying the definition of "natural number" and "greater than" operation to return a new expression such as "x>0". The process of constructing a new expression is equivalent to writing a proof of a new theorem. The compiler is responsible for checking the correctness of the proof according to whether the variables of the program are well-typed for obtaining the final result.
 
 ## How to use Coq?
  
-There are three aspects that make the use of this system very confusing: 1. the approach of using the interactive mode besides the programming language 2. the distinction between backward interactive mode and forward explicit writing proof. and 3. the gap between the rules of the logic system for analyzing the natural language and the underlying type system of the programming language to be checked. We will discuss these in detail in the following section, before listing the most common commands for using this system to assist us in proving a theorem.
+There are three aspects that make the use of this system very confusing: 
+
+1. the approach of using the interactive mode besides the programming language 
+
+2. the distinction between backward interactive mode and forward explicit writing proof. and 
+
+3. the gap between the rules of the logic system for analyzing the natural language and the underlying type system of the programming language to be checked. 
+   
+We will discuss these in detail in this section, before listing the most common commands for using this system to assist us in proving a theorem.
 
  
 - Firstly, we can construct a proposition expression directly by writing a long nested mathematical expression, but for ease of use, the system provides another simple way of writing proofs, which is the interactive proof mode. In this mode, we can write proofs step by step using commands called Tactics. The most basic command is "apply", which is used when we have a fact A, applying a rule "A->B", implemented as a function in this system, will produce a new fact B, which may be what we want. During the evolution of the version, Coq offers new different commands for a similar purpose with slight differences that are, however, translated to the same underlying program to be checked. In this way, when thinking about the process of proof, we only need to care about the steps we are doing, ignoring the specific commands used in the program. And for a goal, we only need one most powerful version of commands that we know well in order to perform each type of proof step.
 
  
-- Secondly, the most confusing thing about the interactive proof mode of this system is that it's written backwards, which means that when you start a proof, the goal is shown on the screen with the local variables above the goal, and the commands given by the user are applied by default to the goal instead of the input arguments as usual programming language. For example, for the fact "A/\B" in the goal, we apply the constructor of "/\", which is "A->B->A/\B", replacing the goal with two new subgoals A and B to be proved later. Yes, when we construct a predicate, it disappears because of the backward proof. During the proof, the goal is implicit in the context, making the program code hard to read unless you run it step by step again in this system. So in my suggestion, as we usually do when writing a math proof, write the program forward, and label the subgoal explicitly for the variables produced in the code.
+- Secondly, the most confusing thing about the interactive proof mode of this system is that it's written backward, which means that when you start a proof, the goal is shown on the screen with the hypothesis viewed as local variables above the goal, and the commands given by the user are applied by default to the goal instead of the input arguments as the usual programming language. For example, for the fact "A/\\B" in the goal, we apply the constructor of "/\\", which is "A->B->A/\\B", replacing the goal with two new subgoals A and B to be proved later. Yes, when we construct a predicate, it disappears because of the backward proof. During the proof, the goal is implicit in the context, making the program code hard to read unless you run it step by step again in this system. So in my suggestion, as we usually do when writing a math proof, write the program forward, and label the subgoal explicitly for the variables produced in the code.
 
  
 - Thirdly, the most commonly used logical systems in everyday life are propositional and predicate logic, which can be easily translated from natural language. Propositional logic includes logical connectives such as 'and', 'or', 'not', and 'implies', while predicate logic involves quantifiers such as 'for all' and 'exists', and predicates such as 'equal to' and 'greater than'. They also contain several rules for evaluating expressions. However, Coq uses a dependent type system that, though looks different, is isomorphic to the traditional logic system. In Coq, commands are applied directly to the type system rather than the logic. There are two approaches to addressing this gap: translating the logical expression to the type system and using the corresponding commands, or selecting commands directly for each logical connective or quantifier without knowledge of how these logical operations are implemented in the type system. The following paragraphs will utilize the second approach.
+
+Compared to similar provers, the advantage of Coq is that it can also be used as a normal functional programming language, which has 'lambda', 'apply' and 'pattern match'. We can use it to implement some algorithms and prove some property about the code using the same language in the same environment.
 
 ## Commands and Tactics
  
@@ -49,18 +59,18 @@ Tactics:
    - destruct/case, induction/elim.
 5. Equality of inductive types: f_equal, discriminate, injection, inversion.
 
-also see https://coq.inria.fr/tutorial/
+see also https://coq.inria.fr/tutorial/ for more information
 
 ## Logical Systems
 
-Let's demonstrate some examples of propositional logic using only some very simple logical connectives such as '->', '/\', '\/', '\~'. We can apply the rules of the type system listed above to these operators, but please forget the connection between them and just think about what we want to do with these connectives and what rules are established for them. Note that a logical connective can appear in either the premise or the conclusion, and that by default Coq's commands are applied backwards to the target, i.e. the target is changed to the left part of a "->" rule. When we apply a rule to the premise, as we often do, we need to specify which premise to apply, and we get a new premise forward. To summarize, for '->' we use 'apply' in the conclusion or 'intros' in the premise. Similarly, for '/\' and '\/' we use 'constructor' in the conclusion or 'destruct' in the premise as a convenient alternative. For '\~' we need 'destruct' and 'Require Import Classical' similar to '->'.
+
+### Propositional Logic
+
+Let's demonstrate some examples of propositional logic using only some very simple logical connectives such as '->', '/\\', '\/', '\~'. We can apply the rules of the type system listed above to these operators, but please forget the connection between them and just think about what we want to do with these connectives and what rules are established for them. Note that a logical connective can appear in either the premise or in the conclusion, and that by default Coq's commands are applied backward to the goal if not specified., i.e. the goal is changed to the left part of a "->" rule. When we apply a rule to the premise, as we often do, we need to specify which premise to apply, and we get a new premise forward. To summarize, for '->' we use 'apply' in the conclusion or 'intros' in the premise. Similarly, for '/\\' and '\/' we use 'constructor' in the conclusion or 'destruct' in the premise as a convenient alternative. For '\~' we need 'destruct' and 'Require Import Classical' similar to '->'.
 
  
-Here's the code that needed to be checked step by step in Coq[1], because we want to see the current goals after each line on the screen to know what's happening, although we've already suggested writing them explicitly in the code as much as possible, as we usually do when writing a mathematical proof. In propositional logic, we usually don't need to define our new rules as a axiom as we do in predicate logic for the predicates we have defined.
+Here's the code that needed to be checked step by step in Coq(or [jsCoq](https://jscoq.github.io/wa/scratchpad.html) in the browser), because we want to see the current goals after each line on the screen to know what's happening, although we've already suggested writing them explicitly in the code as much as possible, as we usually do when writing a mathematical proof. In propositional logic, we usually don't need to define our new rules as an axiom as we do in predicate logic for the predicates we have defined.
 
-[1] https://jscoq.github.io/wa/scratchpad.html
-
- 
 ```Coq
 Theorem t1:forall A B:Prop,A/\B->B.
 Proof.
@@ -85,8 +95,9 @@ exact H.
 Qed.
 ```
 
+### Predicate Logic
  
-In predicate logic we can use a predicate to describe the property of an element or the relation between elements, and sometimes we can talk about an abstract concept with only certain properties without knowing what it is. In Coq we can use the axiom command to define a predicate, but since this definition can be used directly to construct a factor, which we don't want to do because it is dangerous to construct without proof, we have to make sure that we only define some rules to get the factor and deal with it. Furthermore, a factor can be constructed using multiple rules, which can be reasoned by case if it's in the hypothesis, or defined by recursion, which can be reasoned by mathematical induction (Coq uses the first argument by default, which can sometimes seem confusing as it's implicit) if it's in the predicate of goal. For example, the Peano number is defined by zero and its successor. If we prove two cases for it, we know that a property will be true for all natural numbers.
+In predicate logic, we can use a predicate to describe the property of an element or the relation between elements, and sometimes we can talk about an abstract concept with only certain properties without knowing what it is. In Coq, we can use the axiom command to define a predicate, but since this definition can be used directly to construct a factor, which we don't want to do because it is dangerous to construct without proof, we have to make sure that we only define some rules to get the factor and deal with it. Furthermore, a factor can be constructed using multiple rules, which can be reasoned by case if it's in the hypothesis, or defined by recursion, which can be reasoned by mathematical induction (Coq uses the first argument by default, which can sometimes seem confusing as it's implicit) if it's in the predicate of goal. For example, the Peano number is defined by zero and its successor. If we prove two cases for it, we know that a property will be true for all natural numbers.
  
 
 
