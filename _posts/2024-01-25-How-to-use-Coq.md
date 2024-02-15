@@ -56,8 +56,8 @@ Proof.
   intros A B H1 H2.
   (* H1 : A *)
   (* H2 : A->B *)
-  apply H2. 
-  (* H1 : B *)
+  apply H2.
+  (* Goal : A *)
   apply H1. 
 Qed.
 
