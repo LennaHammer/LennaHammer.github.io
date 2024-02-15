@@ -168,6 +168,9 @@ Inductive parent (x y:Prop):Prop:=
   | father: x -> y -> parent x y.
 ```
 
+
+{::comment}
+
 TODO
 
 ```Coq
@@ -197,3 +200,5 @@ TODO
 TODO
 
 {: style="text-align: justify" }
+
+{:/comment}
