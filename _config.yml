@@ -31,7 +31,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 remote_theme: pages-themes/modernist@v0.2.0
-theme: jekyll-theme-modernist
+#theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
