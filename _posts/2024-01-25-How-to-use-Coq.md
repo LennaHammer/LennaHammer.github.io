@@ -45,7 +45,7 @@ For example, we can sum from 0 to 100 as follows:
 Compute (let fix f x:nat := match x with 0 => 0 | S x => S x + f x end in f 100).
 ```
 
-The function 'f' defined as lambda first is then applied with argument '100', and the calculation is divided into two cases with pattern match and recursion.
+The function 'f', first defined as a lambda, is then applied with argument '100', and the calculation is divided into two cases with pattern matching and recursion. There is no need to go into much detail here about how to use a functional programming language, which is irrelevant to writing a proof.
 
 Similarly, a proof can be written as follows:
 
@@ -69,6 +69,8 @@ Qed.
 ```
 
 The variable names can be omitted, although this is not recommended.
+
+
 
 ## Commands and Tactics
  
