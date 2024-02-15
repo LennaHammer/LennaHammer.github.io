@@ -78,6 +78,8 @@ Implementing a function with a particular type annotation is equivalent to provi
 
 Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones. The details will be explained later with examples focusing on the intuition of how to draw the conclusion rather than writing proof.
 
+Inductive types, a small extension of the typed lambda calculus for convenience, can be used to construct something of new types and are also often used with pattern matching to deal with multiple cases or to get the element of a record as well, which are mainly used for defining predicates. Some axioms and rules are automatically defined for the new types.
+
  
 Commands:
 1. Axiom, Theorem, Definition, Fixpoint, Inductive, Proof.
