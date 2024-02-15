@@ -4,7 +4,7 @@ title:  "Prove a theorem using programming language"
 author: "Lenna Hammer"
 ---
 
-<style>div{text-align:justify;}</style>
+<style>p{text-align:justify;}</style>
 
 <!-- # Coq Tactics Cheatsheet -->
 
