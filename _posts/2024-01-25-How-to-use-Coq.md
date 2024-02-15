@@ -47,7 +47,7 @@ Compute (let fix f x:nat := match x with 0 => 0 | S x => S x + f x end in f 100)
 
 The function 'f', first defined as a lambda, is then applied with argument '100', and the calculation is divided into two cases with pattern matching and recursion. There is no need to go into much detail here about how to use a functional programming language, which is irrelevant to writing a proof.
 
-Similarly, a proof can be written as follows:
+Similarly, a proof can be written backward or forward as follows:
 
 ```
 Theorem backward: forall A B : Prop, A -> (A -> B) -> B.
