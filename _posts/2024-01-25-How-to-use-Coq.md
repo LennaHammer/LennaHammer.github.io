@@ -1,5 +1,6 @@
 ---
 layout: post
+title:  "Coq Tactics Cheatsheet"
 ---
 
 # Coq Tactics Cheatsheet
@@ -36,7 +37,7 @@ We will discuss these in detail in this section, before listing the most common 
  
 - Thirdly, the most commonly used logical systems in everyday life are propositional and predicate logic, which can be easily translated from natural language. Propositional logic includes logical connectives such as 'and', 'or', 'not', and 'implies', while predicate logic involves quantifiers such as 'for all' and 'exists', and predicates such as 'equal to' and 'greater than'. They also contain several rules for evaluating expressions. However, Coq uses a dependent type system that, though looks different, is isomorphic to the traditional logic system. In Coq, commands are applied directly to the type system rather than the logic. There are two approaches to addressing this gap: translating the logical expression to the type system and using the corresponding commands, or selecting commands directly for each logical connective or quantifier without knowledge of how these logical operations are implemented in the type system. The following paragraphs will utilize the second approach.
 
-Compared to similar provers, the advantage of Coq is that it can also be used as a normal functional programming language, which has 'lambda', 'apply' and 'pattern match'. We can use it to implement some algorithms and prove some property about the code using the same language in the same environment.
+Compared to similar provers, the advantage of Coq is that it can also be used as a normal functional programming language with lambda, apply, and pattern match. We can use it to implement some algorithms and prove some properties of that code using the same language in the same environment, although for historical reasons Coq codes are often written in a style that is hard to read for mathematical proof.
 
 ## Commands and Tactics
  
@@ -64,12 +65,12 @@ see also https://coq.inria.fr/tutorial/ for more information
 ## Logical Systems
 
 
+
 ### Propositional Logic
 
 Let's demonstrate some examples of propositional logic using only some very simple logical connectives such as '->', '/\\', '\/', '\~'. We can apply the rules of the type system listed above to these operators, but please forget the connection between them and just think about what we want to do with these connectives and what rules are established for them. Note that a logical connective can appear in either the premise or in the conclusion, and that by default Coq's commands are applied backward to the goal if not specified., i.e. the goal is changed to the left part of a "->" rule. When we apply a rule to the premise, as we often do, we need to specify which premise to apply, and we get a new premise forward. To summarize, for '->' we use 'apply' in the conclusion or 'intros' in the premise. Similarly, for '/\\' and '\/' we use 'constructor' in the conclusion or 'destruct' in the premise as a convenient alternative. For '\~' we need 'destruct' and 'Require Import Classical' similar to '->'.
 
- 
-Here's the code that needed to be checked step by step in Coq(or [jsCoq](https://jscoq.github.io/wa/scratchpad.html) in the browser), because we want to see the current goals after each line on the screen to know what's happening, although we've already suggested writing them explicitly in the code as much as possible, as we usually do when writing a mathematical proof. In propositional logic, we usually don't need to define our new rules as an axiom as we do in predicate logic for the predicates we have defined.
+Here's the code that needed to be checked step by step in Coq(or a browser-based version named [jsCoq](https://jscoq.github.io/wa/scratchpad.html)), because we want to see the current goals after each line on the screen to know what's happening, although we've already suggested writing them explicitly in the code as much as possible, as we usually do when writing a mathematical proof. In propositional logic, we usually don't need to define our new rules as an axiom as we do in predicate logic for the predicates we have defined.
 
 ```Coq
 Theorem t1:forall A B:Prop,A/\B->B.
