@@ -4,7 +4,7 @@ title:  "Coq Tactics Cheatsheet"
 ---
 
 <style>
-div {
+p {
     text-align: justify,
 }
 </style>
