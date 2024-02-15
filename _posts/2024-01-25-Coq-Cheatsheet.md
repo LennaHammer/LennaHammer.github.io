@@ -97,7 +97,7 @@ Tactics:
 2. Forward: set, assert/enough.
 3. Equality: reflexivity/symmetry/transitivity, rewrite/replace, simpl/unfold.
 4. Inductive type:
-   - constructor/split/left/right/exists.
+   - apply/constructor/split/left/right/exists.
    - destruct/case, induction/elim.
 5. Equality of inductive types: f_equal, discriminate, injection, inversion.
 
