@@ -93,7 +93,7 @@ Commands:
 
 Tactics: 
 1. Basic: apply, apply in, apply with, intro.
-   - exact/assumption/trivial/auto, contradiction, generalize.
+   - exact/assumption/trivial/auto, contradiction/absurd, generalize.
 2. Forward: set, assert/enough.
 3. Equality: reflexivity/symmetry/transitivity, rewrite/replace, simpl/unfold.
 4. Inductive type:
@@ -139,7 +139,7 @@ Qed.
 
 ### Predicate Logic
  
-In predicate logic, we can use a predicate to describe the property of an element or the relation between elements, and sometimes we can talk about an abstract concept with only certain properties without knowing what it is. In Coq, we can use the axiom command to define a predicate, but since this definition can be used directly to construct a factor, which we don't want to do because it is dangerous to construct without proof, we have to make sure that we only define some rules to get the factor and deal with it. Furthermore, a fact in the predicate in the goal can be constructed using multiple rules, which can be reasoned by case, or defined by recursion, which can be reasoned by mathematical induction (Coq uses the first argument by default, which can sometimes seem confusing as it's implicit). For example, the Peano number is defined by zero and its successor. If we prove two cases for it, we know that a property will be true for all natural numbers.
+In predicate logic, we can use a predicate to describe the property of an element or the relation between elements, and sometimes we can talk about an abstract concept with only certain properties without knowing what it is. In Coq, we can use the axiom command to define a predicate, but since this definition can be used directly to construct a factor, which we don't want to do because it is dangerous to construct without proof, we have to make sure that we only define some rules to get the factor and deal with it. Furthermore, a fact of the predicate can be constructed using multiple rules, which can be reasoned by case, or can be defined by recursion, which can be reasoned by mathematical induction (Coq uses the first argument by default, which can sometimes seem confusing as it's implicit). For example, the Peano number is defined by zero and its successor. If we prove two cases for it, we know that a property will be true for all natural numbers.
 
 For example, we can define a relation and prove as follows:
 
@@ -183,7 +183,7 @@ TODO
 
 ## Other ATP
 
-
+Isabelle
 TODO
 
 ## Conclusion
