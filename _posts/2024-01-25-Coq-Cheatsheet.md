@@ -93,7 +93,7 @@ Commands:
 
 Tactics: 
 1. Basic: apply, apply in, apply with, intro.
-   - exact/assumption/trivial/auto, contradiction, generalize.
+   - exact/assumption/trivial/auto, contradiction/absurd, generalize.
 2. Forward: set, assert/enough.
 3. Equality: reflexivity/symmetry/transitivity, rewrite/replace, simpl/unfold.
 4. Inductive type:
