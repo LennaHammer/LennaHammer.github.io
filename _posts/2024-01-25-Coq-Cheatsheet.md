@@ -35,7 +35,7 @@ We will discuss these in detail in this section, before listing the most common 
 - Firstly, we can construct a proposition expression directly by writing a long nested mathematical expression, but for ease of use, the system provides another simple way of writing proofs, which is the interactive proof mode. In this mode, we can write proofs step by step using commands called Tactics. The most basic command is "apply", which is used when we have a fact A, applying a rule "A->B", implemented as a function in this system, will produce a new fact B, which may be what we want. During the evolution of the version, Coq offers new different commands for a similar purpose with slight differences that are, however, translated to the same underlying program to be checked. In this way, when thinking about the process of proof, we only need to care about the steps we are doing, ignoring the specific commands used in the program. And for a goal, we only need one most powerful version of commands that we know well in order to perform each type of proof step.
 
  
-- Secondly, the most confusing thing about the interactive proof mode of this system is that it's written backward, which means that when you start a proof, the goal is shown on the screen with the hypothesis viewed as local variables above the goal, and the commands given by the user are applied by default to the goal instead of the input arguments as the usual programming language. For example, for the fact "A/\\B" in the goal, we apply the constructor of "/\\", which is "A->B->A/\\B", replacing the goal with two new subgoals A and B to be proved later. Yes, when we construct a predicate, it disappears because of the backward proof. During the proof, the goal is implicit in the context, making the program code hard to read unless you run it step by step again in this system. So in my suggestion, as we usually do when writing a math proof, write the program forward, and label the subgoal explicitly for the variables produced in the code.
+- Secondly, the most confusing thing about the interactive proof mode of this system is that it's written backward, which means that when you start a proof, the goal is shown on the screen with the hypothesis viewed as local variables above the goal, and the commands given by the user are applied by default to the goal instead of the input arguments as the usual programming language. For example, for the fact "A/\\B" in the goal, applying the constructor of "/\\", which is "A->B->A/\\B", will replace the goal with two new subgoals A and B to be proved later. Yes, when we construct a predicate, it disappears because of the backward proof. During the proof, the goal is implicit in the context, making the program code hard to read unless you run it step by step again in this system. So in my suggestion, as we usually do when writing a math proof, write the program forward, and label the subgoal explicitly for the variables produced in the code.
 
  
 - Thirdly, the most commonly used logical systems in everyday life are propositional and predicate logic, which can be easily translated from natural language. Propositional logic includes logical connectives such as 'and', 'or', 'not', and 'implies', while predicate logic involves quantifiers such as 'for all' and 'exists', and predicates such as 'equal to' and 'greater than'. They also contain several rules for evaluating expressions. However, Coq uses a dependent type system that, though looks different, is isomorphic to the traditional logic system. In Coq, commands are applied directly to the type system rather than the logic. There are two approaches to addressing this gap: translating the logical expression to the type system and using the corresponding commands, or selecting commands directly for each logical connective or quantifier without knowledge of how these logical operations are implemented in the type system. The following paragraphs will utilize the second approach.
@@ -79,7 +79,7 @@ The variable names can be omitted, although this is not recommended.
  
 Implementing a function with a particular type annotation is equivalent to proving the declared type exists. Calling a function is the same as applying a rule. That's how the theorem-proving system works. Coq is one of these systems that includes a programming language based on typed lambda calculus, so no matter what commands or tactics we use in proof mode, they will eventually be translated into the basic functions checked by the compiler, as function is the only element used to describe the world. 
 
-Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones and sometimes they do the same things. The details will be explained later with examples focusing on the intuition of how to draw the conclusion rather than writing proof.
+Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones and sometimes they do the same things. The details will be explained later with examples focusing on the intuition of how to find the conclusion rather than writing proof.
 
 In addition to the "imply" relation, equality is another important relation that requires special attention. 
 
@@ -165,16 +165,44 @@ Inductive parent (x y: Prop): Prop :=
   | father: x -> y -> parent x y.
 ```
 
-
-{::comment}
-
-TODO
+The [natural number](https://coq.inria.fr/doc/V8.18.0/stdlib/Coq.Init.Nat.html), which we often use to construct some properties with calculation and induction, is implemented in Coq as follows:
 
 ```Coq
 Inductive nat : Type :=
   | O : nat
   | S : nat -> nat.
+
+
+Fixpoint add n m :=
+  match n with
+  | 0 => m
+  | S p => S (p + m)
+  end.
+
+
+Fixpoint leb n m : bool :=
+  match n, m with
+    | 0, _ => true
+    | _, 0 => false
+    | S n', S m' => leb n' m'
+  end.
 ```
+
+
+## Math
+
+Coq is implemented as a dependent type extension to the programming language called OCaml, which is widely used in writing compilers and tools in financial domains, so Coq can be used to write projects in the real world and earn the extra power of proof as another way besides test cases to help us improve the correctness of the program. However, to prove a mathematical theorem, compared to Isabelle and lean, Coq is not a good choice because mathematical proofs are usually written in a different style, where we write each result we get in each step with the theorem (sometimes picked by AI) we used for that step , while in Coq we usually type a command to apply a theorem and then the system calculates the results to print on the screen, although most of the commands are identical in these provers. Furthermore, Isabelle and lean have more built-in libraries about math, including more theorems that we can use in the proof. 
+
+
+
+
+{::comment}
+
+In mathematical proof we often use some patterns like proof by case, proof by contradiction, proof by induction. These can be easily implemented in any of these prover systems.
+
+TODO
+
+
 
 ## Application
 
