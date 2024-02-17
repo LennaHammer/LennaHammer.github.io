@@ -40,6 +40,9 @@ We will discuss these in detail in this section, before listing the most common 
  
 - Thirdly, the most commonly used logical systems in everyday life are propositional and predicate logic, which can be easily translated from natural language. Propositional logic includes logical connectives such as 'and', 'or', 'not', and 'implies', while predicate logic involves quantifiers such as 'for all' and 'exists', and predicates such as 'equal to' and 'greater than'. They also contain several rules for evaluating expressions. However, Coq uses a dependent type system that, though looks different, is isomorphic to the traditional logic system. In Coq, commands are applied directly to the type system rather than the logic. There are two approaches to addressing this gap: translating the logical expression to the type system and using the corresponding commands, or selecting commands directly for each logical connective or quantifier without knowledge of how these logical operations are implemented in the type system. The following paragraphs will utilize the second approach.
 
+
+### Example
+
 Compared to similar provers, the advantage of Coq is that it can also be used as a normal functional programming language with lambda, apply, and pattern match. We can use it to implement some algorithms and prove some properties of that code using the same language in the same environment, although Coq codes are often written in a style that is hard to read for mathematical proof for historical reasons.
 
 Let's see some examples. We can sum from 0 to 100 as follows:
@@ -103,6 +106,8 @@ Tactics:
 
 See also https://coq.inria.fr/tutorial/ for more information.
 
+Tactics provide an imperative interface to the functional language, unfolding the proof step by step. The tactic 'intros' is equivalent to 'lambda' and 'apply' is used to call a function. For user-defined types, we can 'apply' the constructor and later 'destruct' it to deal with its elements and cases.
+
 ## Logical Systems
 
 
@@ -149,6 +154,7 @@ Axiom rule1: forall x y: Prop, mother x y -> parent x y.
 Axiom rule2: forall x y: Prop, father x y -> parent x y.
 Axiom A B: Prop.
 Axiom fact1: mother A B.
+
 Theorem fact2: parent A B.
 Proof.
   apply rule1.
@@ -165,7 +171,7 @@ Inductive parent (x y: Prop): Prop :=
   | father: x -> y -> parent x y.
 ```
 
-The natural number, which we often use to construct some properties with calculation and induction, is implemented in Coq as follows:
+The natural number, which we often use to construct some properties with calculation and induction, is defined in Coq as follows:
 
 ```Coq
 Inductive nat : Type :=
@@ -186,11 +192,18 @@ Coq is implemented as a dependent type extension to the programming language cal
 
 
 
+In mathematical proof, we often follow some patterns like proof by case, proof by contrapositive, proof by contradiction, and proof by induction. which can all be easily achieved in these prover systems.
+
+
+
+## Conclusion
+
+Traditionally, a programming language is used to perform computations, and with the power of the type system, we can also write proofs using a programming language. Rather than provide an elaborate tutorial on how to write a proof assistant, this article will focus on discussing some techniques and suggestions for converting a proof into a formal form written in programming languages.  The details can always be looked up in the manual and tutorial if necessary.
+
 
 {::comment}
 
 
-In mathematical proof, we often use some patterns like proof by case, proof by contradiction, and proof by induction. These can be easily implemented in any of these prover systems.
 {:/comment}
 {: style="text-align: justify" }
 
