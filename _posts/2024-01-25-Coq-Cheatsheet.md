@@ -192,7 +192,6 @@ Fixpoint add n m :=
 Coq is implemented as a dependent type extension to the programming language called OCaml, which is widely used in writing compilers and tools in financial domains, so Coq can be used to write projects in the real world and earn the extra power of proof as another way besides test cases to help us improve the correctness of the program. However, to prove a mathematical theorem, compared to Isabelle and Lean, Coq is not a good choice because mathematical proofs are usually written in a different style, where we write each result we get in each step with the theorem (sometimes picked by AI) we used for that step, while in Coq we usually type a command to apply a theorem and then the system calculates the results to print on the screen, although most of the commands are identical in these provers. Furthermore, Isabelle and Lean have more built-in libraries about math, including more theorems that we can use in the proof. 
 
 
-
 In mathematical proof, we often follow some patterns like proof by case, proof by contrapositive, proof by contradiction, and proof by induction. which can all be easily achieved in these prover systems.
 
 
