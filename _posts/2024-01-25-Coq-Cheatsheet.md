@@ -172,19 +172,10 @@ Inductive nat : Type :=
   | O : nat
   | S : nat -> nat.
 
-
 Fixpoint add n m :=
   match n with
   | 0 => m
   | S p => S (p + m)
-  end.
-
-
-Fixpoint leb n m : bool :=
-  match n, m with
-    | 0, _ => true
-    | _, 0 => false
-    | S n', S m' => leb n' m'
   end.
 ```
 
@@ -200,16 +191,14 @@ Coq is implemented as a dependent type extension to the programming language cal
 
 
 In mathematical proof, we often use some patterns like proof by case, proof by contradiction, and proof by induction. These can be easily implemented in any of these prover systems.
+{:/comment}
+{: style="text-align: justify" }
+
+
 
 <!-- 
 
 
-
-
-
-
-
- -->
 
 
 
@@ -233,6 +222,12 @@ TODO
 
 TODO
 
-{: style="text-align: justify" }
 
-{:/comment}
+
+
+
+
+
+ -->
+
+
