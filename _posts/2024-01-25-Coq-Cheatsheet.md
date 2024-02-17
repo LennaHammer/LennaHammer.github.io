@@ -106,7 +106,7 @@ Tactics:
 
 See also https://coq.inria.fr/tutorial/ for more information.
 
-Tactics provide an imperative interface to the functional language, unfolding the proof step by step. The tactic 'intros' is equivalent to 'lambda' and 'apply' is used to call a function. For user-defined types, we can 'apply' the constructor and later 'destruct' it to deal with its elements and cases.
+Tactics provide an imperative interface to the functional language, unfolding the proof step by step. The tactic 'intros' is equivalent to 'lambda' and 'apply' is used to call a function. For user-defined types, we can 'apply' the constructor and later 'destruct' it to deal with its elements and cases. Equality is defined by the reflexivity of user-defined types.
 
 
 ## Logical Systems
