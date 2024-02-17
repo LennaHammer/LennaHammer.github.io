@@ -108,6 +108,7 @@ See also https://coq.inria.fr/tutorial/ for more information.
 
 Tactics provide an imperative interface to the functional language, unfolding the proof step by step. The tactic 'intros' is equivalent to 'lambda' and 'apply' is used to call a function. For user-defined types, we can 'apply' the constructor and later 'destruct' it to deal with its elements and cases.
 
+
 ## Logical Systems
 
 
@@ -186,7 +187,7 @@ Fixpoint add n m :=
 ```
 
 
-## Math
+## Mathematics
 
 Coq is implemented as a dependent type extension to the programming language called OCaml, which is widely used in writing compilers and tools in financial domains, so Coq can be used to write projects in the real world and earn the extra power of proof as another way besides test cases to help us improve the correctness of the program. However, to prove a mathematical theorem, compared to Isabelle and Lean, Coq is not a good choice because mathematical proofs are usually written in a different style, where we write each result we get in each step with the theorem (sometimes picked by AI) we used for that step, while in Coq we usually type a command to apply a theorem and then the system calculates the results to print on the screen, although most of the commands are identical in these provers. Furthermore, Isabelle and Lean have more built-in libraries about math, including more theorems that we can use in the proof. 
 
@@ -201,18 +202,20 @@ In mathematical proof, we often follow some patterns like proof by case, proof b
 Traditionally, a programming language is used to perform computations, and with the power of the type system, we can also write proofs using a programming language. Rather than provide an elaborate tutorial on how to write a proof assistant, this article will focus on discussing some techniques and suggestions for converting a proof into a formal form written in programming languages.  The details can always be looked up in the manual and tutorial if necessary.
 
 
-{::comment}
 
 
-{:/comment}
-{: style="text-align: justify" }
+
 
 
 
 <!-- 
 
 
+{::comment}
 
+
+{:/comment}
+{: style="text-align: justify" }
 
 
 ## Application
