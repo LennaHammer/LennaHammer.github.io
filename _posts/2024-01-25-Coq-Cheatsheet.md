@@ -84,11 +84,10 @@ Implementing a function with a particular type annotation is equivalent to provi
 
 Here I will first list some useful commands for different purposes and logic systems so that we can pick one from the list when we need it. Remember that we can write functions directly in proof mode, and the tactic is only implemented for convenience, the amount of which is infinite, so it's unnecessary and impossible to know all the built-in ones and sometimes they do the same things. The details will be explained later with examples focusing on the intuition of how to find the conclusion rather than writing proof.
 
-In addition to the "imply" relation, equality is another important relation that requires special attention. 
+In addition to the "imply" relation, equality is another important relation that requires special attention. For an equation in the goal, we can calculate the left and right sides of it to get the same result by using the operator definition, another equation, or the constructor of types.
 
 Inductive types, a small extension of the typed lambda calculus for convenience, can be used to construct something of new types and are also often used with pattern matching to deal with multiple cases or to get the element of a record as well, which are mainly used for defining predicates. Some axioms and rules are automatically defined for the new types. The properties defined include reflexivity.
 
-For an equation in the goal, we can calculate the left and right sides of it to get the same result by using the operator definition, another equation, or the constructor of types.
 
 ### The Cheatsheet
 
