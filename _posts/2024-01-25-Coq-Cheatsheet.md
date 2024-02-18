@@ -86,7 +86,9 @@ Here I will first list some useful commands for different purposes and logic sys
 
 In addition to the "imply" relation, equality is another important relation that requires special attention. 
 
-Inductive types, a small extension of the typed lambda calculus for convenience, can be used to construct something of new types and are also often used with pattern matching to deal with multiple cases or to get the element of a record as well, which are mainly used for defining predicates. Some axioms and rules are automatically defined for the new types.
+Inductive types, a small extension of the typed lambda calculus for convenience, can be used to construct something of new types and are also often used with pattern matching to deal with multiple cases or to get the element of a record as well, which are mainly used for defining predicates. Some axioms and rules are automatically defined for the new types. The properties defined include reflexivity.
+
+For an equation in the goal, we can calculate the left and right sides of it to get the same result by using the operator definition, another equation, or the constructor of types.
 
 ### The Cheatsheet
 
@@ -115,7 +117,7 @@ Tactics provide an imperative interface to the functional language, unfolding th
 
 ### Propositional Logic
 
-Let's demonstrate some examples of propositional logic using only some very simple logical connectives such as '->', '/\\', '\/', '\~'. We can apply the rules of the type system listed above to these operators, but please forget the connection between them and just think about what we want to do with these connectives and what rules are established for them. Note that a logical connective can appear in either the premise or in the conclusion, and that by default Coq's commands are applied backward to the goal if not specified., i.e. the goal is changed to the left part of a "->" rule. When we apply a rule to the premise, as we often do, we need to specify which premise to apply, and we get a new premise forward. To summarize, for '->' we use 'apply' in the conclusion or 'intros' in the premise. Similarly, for '/\\' and '\/' we use 'constructor' in the conclusion or 'destruct' in the premise as a convenient alternative. For '\~' we need 'destruct' and 'Require Import Classical' similar to '->'.
+Let's demonstrate some examples of propositional logic using only some very simple logical connectives such as '->', '/\\', '\/', '\~'. We can apply the rules of the type system listed above to these operators, but please forget the connection between them and just think about what we want to do with these connectives and what rules are established for them. Note that a logical connective can appear in either the premise or in the conclusion, and that by default Coq's commands are applied backward to the goal if not specified., i.e. the goal is changed to the left part of a "->" rule. When we apply a rule to the premise, as we often do, we need to specify which premise to apply, and we get a new premise forward. To summarize, for '->' we use 'apply' in the conclusion or 'intros' in the premise. Similarly, for '/\\' and '\/' we use 'constructor' to introduce the conclusion or 'destruct' to eliminate the premise as a convenient alternative. For '\~' we need 'destruct' and 'Require Import Classical' similar to '->'.
 
 Here's the code that needed to be checked step by step in Coq(or a browser-based version named [jsCoq](https://jscoq.github.io/wa/scratchpad.html)), because we want to see the current goals after each line on the screen to know what's happening, although we've already suggested writing them explicitly in the code as much as possible, as we usually do when writing a mathematical proof. In propositional logic, we usually don't need to define our new rules as an axiom as we do in predicate logic for the predicates we have defined.
 
