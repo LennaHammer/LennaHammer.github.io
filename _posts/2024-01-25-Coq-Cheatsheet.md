@@ -107,7 +107,7 @@ Tactics:
 
 See also https://coq.inria.fr/tutorial/ for more information.
 
-Tactics provide an imperative interface to the functional language, unfolding the proof step by step. The tactic 'intros' is equivalent to 'lambda' and 'apply' is used to call a function. For user-defined types, we can 'apply' the constructor and later 'destruct' it to deal with its elements and cases. Equality is defined by the reflexivity of user-defined types.
+Tactics provide an imperative interface to the functional language, unfolding the proof step by step. The tactic 'intros' is equivalent to 'lambda' and 'apply' is used to call a function. For user-defined types, we can 'apply' the constructor and later 'destruct' it to deal with its elements and cases. Equality is defined by the reflexivity of user-defined types. Other tactics are used to simplify the writing of the proof.
 
 
 ## Logical Systems
@@ -199,7 +199,7 @@ In mathematical proof, we often follow some patterns like proof by case, proof b
 
 ## Conclusion
 
-Traditionally, a programming language is used to perform computations, and with the power of the type system, we can also write proofs using a programming language. Rather than provide an elaborate tutorial on how to write a proof assistant, this article will focus on discussing some techniques and suggestions for converting a proof into a formal form written in programming languages.  The details can always be looked up in the manual and tutorial if necessary.
+Traditionally, a programming language is used to perform computations, but with the power of the type system, we can also write proofs inside the programming language. Rather than provide an elaborate tutorial on how to write a proof assistant, this article will focus on discussing some techniques and suggestions for converting a proof into a formal form written in programming languages. The details can always be looked up in the manual and tutorial if necessary.
 
 
 
