@@ -9,11 +9,11 @@
 1. 不及物动词 run, jump, walk, go, come, look, listen
 2. 及物动词 see, know, hear, clean my house,
 3. 系动词 be, become, get, look。后面是
-   - +名词（my name is Lucy. She is a doctor.）, 
-   - +形容词（the car is blue）, the play was interesting。
-   - +介词（the book is on the table）。也可以是不定式, 从句。
+   - be+名词： my name is Lucy. She is a doctor. , he's my brother. 
+   - be+形容词： the car is blue , the play was very interesting。
+   - be+介词： the book is on the table 。也可以是不定式, 从句。
 4. 双宾语 give me the book, ask you, tell me, 可以用介词give...to...,
-5. 宾补: make me ,put it on the table., find this trip very exciting. 
+5. 宾补: make me , put it on the table., find this trip very exciting. 
 
 动词后还可以
 
@@ -51,9 +51,19 @@
 - What's your name?
 - How old are you?
 - Where do you come from?
+
+Where does she live?
+
+Where do you go to school?
+
+What are your favorite subjects? Biology and mathematics.
+
 - What are you doing?
 - What are you talking about?
 - What does she do? - She's a waitress.
+
+what does your father do?
+
 
 关于物
 
@@ -70,19 +80,44 @@ why
 - why not
 - what about…?
 
+Would you like something to eat?
+
+
+### 日常对话
+
+Excuse me. Can you help me?
+问路 ： 
+Walk to the corner. Then make a left turn.
+
+Thank you. 
+You're welcome.
+
+No, thanks.
+
+
+It's nice to meet you. Nice to meet you.
+
+I'm really glad to see you.
+
+I'm so glad you found the bag. 
+
+Sorry I'm late.
+
+I'm tired and hungry.
+
+What pretty flowers!
+
+Don't worry about being late.
+
+this is Harry Bennett. This is my wife Marilyn.
+
+Thanks. 
+See you later.
+
+Don't worry
+
+
 ### 句型
-
-特殊句式
-
-- it句型 it's important to, find it difficult to, It's hard to, it takes me two minutes to,
-  its one o'clock. its Sunday。
-- there be 句型(类似have)有: there were some people rowing on the river
-- 倒装（语序）句首是 地点介词, only, never
-- 比较句: more than, as ... as
-- 建议: what about, would you like, why don't you...
-- 虚拟语气 if, wish,
-
-
 
 并列句 and, but, so
 
@@ -95,6 +130,17 @@ why
 - 表语从句: the problem is …. , that's why... , that's because …,
 - 主语从句 it's … that …, What …. is …
 
+特殊句式
+
+- it句型 it's important to, find it difficult to, It's hard to, it takes me two minutes to,
+  it's one o'clock. it's Sunday。
+- there be 句型(类似have)有: there were some people rowing on the river
+- 倒装（语序）句首是 地点介词, only, never
+- 比较句: more than, as ... as
+- 建议: what about, would you like, why don't you...
+- 虚拟语气 if, wish,
+
+
 ## 名词
 
 
@@ -102,8 +148,7 @@ why
 ## 动词
 
 
-
-
+食物 eat, drink, have, cook
 
 ### 动词的形式
 
@@ -114,54 +159,58 @@ why
 - 将来时be gonna do: be going to, will, be about to,
 - 进行时be doing: all morning, 
 
-否定: I don’t think …, hardly, I don't know.
+否定: I don’t think …, hardly, I don't know. It won't take me long at all.
 
 被动语态: be … by,
 
-情态动词: can, must, should, be able to, have to, need, 后面是动词原形。疑问句时。
-
+情态动词: can, must, should, be able to, have to, need, 后面是动词原形。疑问句时。 I do have to go.
 
 
 to do: 动词不定式, 作为动词后宾语（去做某事）。以及句尾目的状语（来做某事）、名词后定语（做某事的）。和介词to区分。也可能是用分词短语。
-
-- try to, want to, used to, tend to, have to, start to, would like to
-- allow them to, enable … to …,
-- be about to, be willing to, be glad to, be able to, be likely to,
-- 疑问词+to do: tell/know + what/how to …
-- 不加to: let, see/watch someone do,
+- V + to do: try to, want to, used to, tend to, have to, start to, would like to
+- V + ... + to do: allow them to, enable … to …,
+- be + A + to do: be about to, be willing to, be glad to, be able to, be likely to,
+  - it's + A + to do: 
+- V + wh- + to do: tell/know + what/how to …
+- 不加to: let, help, see/watch someone do,
+- N + to do: something to eat, the first man to do, have a chance to do 
+- 目的状语: in order to, 
 
 doing
+- 动词+doing: enjoy doing, stop doing, admit doing, remember/regret doing, spend ... doing, be worth doing, be doing 正在做, like, hate, 
+  - see sb doing. keep doing， 
+- 介词+doing: 
+  - the pleasure of doing, 
+  - without doing, instead of doing, before doing, 
+  - insist on doing, be tired of being, have trouble doing
+  - 短语动词+doing: end up doing,
 
-- 动词+doing: enjoy doing, stop doing, admit doing, remember/regret doing, spend ... doing, be worth doing, be doing 正在做, like, hate,
-- 介词+doing: the pleasure of doing, without doing, instead of doing, before doing, insist on doing, be tired of being, have trouble doing
-- 短语动词+doing: end up doing,
-- see sb doing.
+done
+- 定语： a book called ..., 
+- 状语：
 
 ### 短语动词
 
 短语动词（以be开头）
 
-- about: be happy about, , 
-- become accustomed to ,
+- about: be happy about, , be upset about, be worried about,
+- to: become accustomed to , be similar to, 
 - of: be aware of, be skeptical of, be full of,be proud of, be afraid of,
 - with: be associated with, be filled with, be familiar with, be satisfied with, 
 - in: be dressed in ,
 - at: be mad at, be good at,
-- be upset about, be worried about,
-- be similar to, 
 - from: be different from
-- for: be ready for,
+- for: be ready for, be late for, 
 
 短语动词（动词+副词）。副词可以在宾语前或后。会构成新的意思。
 
 - up: give up, get up, wake up, pick up, use up,
 - away: throw away,
 - off: take off, put off推迟, show off, turn off, get off
-- on: put on (the clothes), turn on (the light), get on (the bus)
-- sit down, calm down,
-- come in,
-- find out, point out, turn out 结果是,
-- come on,
+- on: put on (the clothes), turn on (the light), get on (the bus), come on,
+- down: sit down, calm down,
+- in: come in,
+- out: find out, point out, turn out 结果是,
 
 短语动词（动词+介词）。动词可以及物可以不及物。意思和动词有关。
 
@@ -173,7 +222,7 @@ doing
 - in: result in, live in, put … in …, major in 主修,
 - to: lead to, go to, listen to, belong to, increase to,
 - of: accuse of, think of, dream of, remind ... of,
-- for: ask for, look for, blame for,  wait for, admire for, 
+- for: ask for, look for, blame for,  wait for, admire for, thank for 
 - as: be referred to as, be known as,
 - out of: get out of,
 - feel like,
@@ -183,11 +232,17 @@ doing
 
 
 
-动宾短语（动词+名词）: have breakfast, sing songs, put out the fires,
-
+动宾短语（动词+名词）: 
+- have breakfast, sing songs, put out the fires,
 - lost his temper, make sure,
 
-名词短语: a piece of paper, a red dress, a young lady, a book about history, a cup on the table, 
+名词短语: 
+a piece of paper, 
+a red dress, a young lady, 
+a book about history, 
+a cup on the table, 
+
+the phone number of the restaurant
 
 动词名词化（书面语中）the ... of ...
 
@@ -206,6 +261,7 @@ doing
   - 运动关系:  into/out of the room, across the river, along the street, past, through,
 - 其他介词:  with(=together, having, using), a book about animals, a cup of coffee, a book of mine, one of …, for为了, 
 - 复合介词:  due to, instead of, because of, in terms of , such as, as well as, according to, in spite of,
+
 
 介词短语: 
 
@@ -228,7 +284,7 @@ doing
 - 时间副词: still, yet, late, early, again, ago, later, just, already, Suddenly, immediately, once,  regularly
   - 频率副词: never, always, ever, often, sometimes, rarely, normally,
 - 地点副词: here, there, outside,
-- 程度副词: very, extremely, a little, far,  completely, totally, absolutely, entirely, wholly, fully, thoroughly, quite, kind of,
+- 程度副词: very, extremely, a little, far,  completely, totally, absolutely, entirely, wholly, fully, thoroughly, quite, kind of, I know the owner very well.
 - 方式副词（ly）: happily, fast, slowly, quickly, angrily, carefully,
 - 其他副词: almost, maybe, certainly, technically, probably, Actually, together, all, obviously,
 
@@ -247,13 +303,13 @@ doing
 
 形容词, 系动词后, 名词前。
 - 相当于冠词: previous, another, next, following, recent, first, last, enough, 
-- 情绪: surprised, worried, excited, interested, happy, sad, afraid, anxious, eager, keen, tired, exhausted, 
+- 情绪: surprised, worried, excited, interested, happy, sad, afraid, anxious, eager, keen, tired, exhausted, I'm tired and hungry.
 - 形容人的 beautiful, intelligent, wise, old, friendly, brave, 
   人的长相 tall，fat，young，old，
 
 - 给人的感受 interesting, funny, weird, good, 
 - 最高级 the best in the business
-- 描述物体, 比如外观 big, small, light, heavy, wet, dry, new, old, thick, thin, long,short, high, low, 价格 expensive, cheap, 
+- 描述物体, 比如外观 big, small, light, heavy, wet, dry, new, old, thick, thin, long,short, high, low, 价格 expensive, cheap, 食物delicious，
 - 评价 good, bad, right, wrong,
 - 评价 1 Opinion: beautiful, nice, wonderful, excellent, awful, etc
 - 大小 2 Size: long, large, small, short, tall, etc  
@@ -285,71 +341,45 @@ doing
 ----
 
 ## 近义词
+make，produce， create， 
+
 
 
 ## 词汇
 
 - 月份: June, （介词） in ~
-
 - 星期: Sunday, （介词）on ~
-
 - 数字: one, two, three
-
 - 动物: dog, cat, pig, tiger,
-
 - 衣服: dress, shirt, jeans,（动词） wear, put on, take off,
-
 - 运动: football, run, play
-
 - 文具: book, pen, pencil
-
 - 学科: math,
-
 - 颜色: red, black, white, blue, yellow, green,
-
 - 物体外观: big, small, soft, smooth,
-
 - 人的情绪: happy, sad, excited,
-
 - 人的长相: old, young, tall, fat, cute, pretty,
-
 - 人的性格: brave,
 - 食物: rice,
 - 饮料: water,
 - 蔬菜
 - 水果: apple
-
 - （动词）: eat, drink, have, cook,
-
 - 头部运动: look at, see, listen to, hear
-
 - 口: say, tell, ask,
-
 - 四肢行动: give, jump
-
 - 大脑活动: think, know, believe, like, hate, want
-
 - 开始 start, stop, try,
-
 - 身体部位: foot, hand,
-
 - 商业活动: buy, sell
-
 - 学习: learn, write, read,
-
 - 娱乐: music, movie,
-
 - 交通工具: bus, car, train
-
 - 建筑: park, zoo, school, house, home
-  餐具: fork, 
-
+- 餐具: fork, 
 - 家具: table,
-
 - 烹饪: cook
-
 - 地理: mountain, hill,
-
 - 程度: very, slightly
 
 ## 学术词汇
