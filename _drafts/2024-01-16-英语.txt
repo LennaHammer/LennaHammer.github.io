@@ -1,5 +1,7 @@
 # 语法笔记
 
+编辑日期：2024年2月19日
+
 ## 句子
 
 ### 简单句
@@ -38,6 +40,21 @@
 - 定语修饰名词, 形容词在名词前, 介词在名词后, 动词的分词（-ing/-ed）也可以作形容词。名词后面也可以是形容词, 可以介词短语, 动词不定式/分词, 形容词+介词, 定语/同位语从句。
 - 状语（主要是副词）出现在句首、动词前、动词（含宾语）后。可以是副词, 介词短语, 也可以是状语从句, 动词不定式/分词。
 
+### 长句
+
+- A new community program called "One On One" helps elementary students who've fallen behind.
+  - called 过去分词作定语
+  - students who 定语从句
+
+- You education majors might be especially interested in it because it offers the opportunity to do some teaching
+  -  be interested in 词组
+  - because 原因状语从句
+  - offers the opportunity to do 名词+不定式
+
+- You'd have to volunteer two hours a week for one semester.
+  - have to 情态动词
+  - two hours a week 时间状语，频率
+  - for one semester 句子的第二个时间状语
 
 
 ### 疑问句
@@ -85,36 +102,23 @@ Would you like something to eat?
 
 ### 日常对话
 
-Excuse me. Can you help me?
-问路 ： 
-Walk to the corner. Then make a left turn.
+- Excuse me. Can you help me?
+- 问路： Walk to the corner. Then make a left turn.
+- Thank you. Thanks. 
+  - You're welcome.
+  - No, thanks.
+- 感受
+  - It's nice to meet you. Nice to meet you.
+  - I'm really glad to see you.
+  - I'm so glad you found the bag. 
+  - Sorry I'm late.
+  - I'm tired and hungry.
 
-Thank you. 
-You're welcome.
-
-No, thanks.
-
-
-It's nice to meet you. Nice to meet you.
-
-I'm really glad to see you.
-
-I'm so glad you found the bag. 
-
-Sorry I'm late.
-
-I'm tired and hungry.
-
-What pretty flowers!
-
-Don't worry about being late.
-
-this is Harry Bennett. This is my wife Marilyn.
-
-Thanks. 
-See you later.
-
-Don't worry
+- What pretty flowers!
+- Don't worry about being late.
+- This is Harry Bennett. This is my wife Marilyn.
+- See you later.
+- Don't worry.
 
 
 ### 句型
@@ -123,9 +127,11 @@ Don't worry
 
 复杂句（从句）, 由连词、关系代词/副词引导。也可以用动词不定式, 分词。
 
-- 宾语从句(that,wh-引导, 相当于名词): suggest that, show that,  believe that, understand why, ask if, know that, I'm sure, I'm glad, I think, I know, do you think, remember that,
+- 宾语从句(that,wh-引导, 相当于名词): suggest that, show that,  believe that, , know that, , I think, I know, do you think, remember that,
+  - I'm sure, I'm glad
+  - understand why, ask if
 - 定语从句（who/which/that引导, 相当于形容词） people who, those who, the guy who, way, time, 经常出现在句尾。
-- 状语从句（连词引导, 相当于副词）: 
+- 状语从句：用连词引导，出现在前面或者后面, 整体相当于副词 
 - 同位语 the fact that。类似定语从句。
 - 表语从句: the problem is …. , that's why... , that's because …,
 - 主语从句 it's … that …, What …. is …
@@ -139,17 +145,17 @@ Don't worry
 - 比较句: more than, as ... as
 - 建议: what about, would you like, why don't you...
 - 虚拟语气 if, wish,
-
+- 否定: I don’t think …, hardly, I don't know. It won't take me long at all.
+- 被动语态: be … by,
 
 ## 名词
-
 
 
 ## 动词
 
 
 食物 eat, drink, have, cook
-
+like, hate, 
 ### 动词的形式
 
 时态
@@ -159,16 +165,14 @@ Don't worry
 - 将来时be gonna do: be going to, will, be about to,
 - 进行时be doing: all morning, 
 
-否定: I don’t think …, hardly, I don't know. It won't take me long at all.
 
-被动语态: be … by,
 
-情态动词: can, must, should, be able to, have to, need, 后面是动词原形。疑问句时。 I do have to go.
+情态动词: can, must, should, be able to, have to, need, 后面是动词原形。疑问句时前置。 I do have to go.
 
 
 to do: 动词不定式, 作为动词后宾语（去做某事）。以及句尾目的状语（来做某事）、名词后定语（做某事的）。和介词to区分。也可能是用分词短语。
 - V + to do: try to, want to, used to, tend to, have to, start to, would like to
-- V + ... + to do: allow them to, enable … to …,
+- V + ... + to do: allow them to, enable … to …,encourage all students to
 - be + A + to do: be about to, be willing to, be glad to, be able to, be likely to,
   - it's + A + to do: 
 - V + wh- + to do: tell/know + what/how to …
@@ -177,13 +181,14 @@ to do: 动词不定式, 作为动词后宾语（去做某事）。以及句尾�
 - 目的状语: in order to, 
 
 doing
-- 动词+doing: enjoy doing, stop doing, admit doing, remember/regret doing, spend ... doing, be worth doing, be doing 正在做, like, hate, 
+- 动词+doing: 
+  - enjoy doing, stop doing, admit doing, remember/regret doing, spend ... doing, be worth doing, be doing 正在做, 
   - see sb doing. keep doing， 
+  - 短语动词+doing: end up doing,
 - 介词+doing: 
   - the pleasure of doing, 
   - without doing, instead of doing, before doing, 
   - insist on doing, be tired of being, have trouble doing
-  - 短语动词+doing: end up doing,
 
 done
 - 定语： a book called ..., 
@@ -202,26 +207,18 @@ done
 - from: be different from
 - for: be ready for, be late for, 
 
-短语动词（动词+副词）。副词可以在宾语前或后。会构成新的意思。
 
-- up: give up, get up, wake up, pick up, use up,
-- away: throw away,
-- off: take off, put off推迟, show off, turn off, get off
-- on: put on (the clothes), turn on (the light), get on (the bus), come on,
-- down: sit down, calm down,
-- in: come in,
-- out: find out, point out, turn out 结果是,
 
 短语动词（动词+介词）。动词可以及物可以不及物。意思和动词有关。
 
 - at: loot at. laugh at,
 - about: talk about, tell me about,
-- from: come from, derived from,  prevent from, benefit from,,
+- from: come from, derive from,  prevent from, benefit from,,
 - on: be based on, focus on,   depend on
 - with: present with, struggle with, deal with 处理, provide with, start with, live with,replace with,mix with, agree with, 
 - in: result in, live in, put … in …, major in 主修,
 - to: lead to, go to, listen to, belong to, increase to,
-- of: accuse of, think of, dream of, remind ... of,
+- of: accuse of, think of, dream of, remind ... of, get rid of, 
 - for: ask for, look for, blame for,  wait for, admire for, thank for 
 - as: be referred to as, be known as,
 - out of: get out of,
@@ -230,19 +227,28 @@ done
 - turn into
 - take care of, look forward to , pay attention to 注意,come up with 想出, 提出 ；put up with 忍受, 容忍 ；get rid of, take advantage of 利用,
 
+短语动词（动词+副词）。副词可以在宾语前或后。会构成新的意思。
+
+- up: give up, get up, wake up, pick up, use up, sign up,
+- away: throw away,
+- off: take off, put off推迟, show off, turn off, get off
+- on: put on (the clothes), turn on (the light), get on (the bus), come on,
+- down: sit down, calm down,
+- in: come in,
+- out: find out, point out, turn out 结果是, put out the fires,
 
 
 动宾短语（动词+名词）: 
-- have breakfast, sing songs, put out the fires,
-- lost his temper, make sure,
+- have breakfast, sing songs, 
+- lost his temper, 
+- make sure,
 
 名词短语: 
-a piece of paper, 
-a red dress, a young lady, 
-a book about history, 
-a cup on the table, 
-
-the phone number of the restaurant
+- a piece of paper, 
+- a red dress, a young lady, 
+- a book about history, 
+- a cup on the table, 
+- the phone number of the restaurant
 
 动词名词化（书面语中）the ... of ...
 
@@ -254,29 +260,44 @@ the phone number of the restaurant
 ### 介词
 介词, 在名词后, 动词后都可以。
 
-- 时间介词:  in June, in 1997, on Sunday, at 9:00, from … to …, for three years, since 1988, In the past, In the 1960s, at first, in three days, at once, for the first time, after breakfast, until lunchtime， 
-   - 时间（没有介词）:  this year, last week, these days, three times a week, All the time. so far, once a week, each year, every time, every year, 
-- 地点介词:  in the world, on the street, at home, in London, at the airport, in the letter, in my room, on the floor, 
+- 时间介词:  
+   - in: in June, in 1997, , In the past, In the 1960s,  in three days, in the end, 
+   - on: on Sunday, on Monday morning, 
+   - at: at 9:00, at first, at once
+   - for:  for three years, for the first time
+   - 时间区间: from … to …,since 1988, after breakfast, until lunchtime， 
+   - 时间（没有介词）:  this year, last week, these days, , all the time. so far, three days ago
+   - 频率（没有介词）once a week, each year, every time, every year,  two days a week, three times a week,
+- 地点介词: 
+  - in:  in the world, in London, in the letter, in my room, 
+  - on: on the floor, on the street,
+  - at: at home,at the airport, at our university.
   - 位置关系:  in front of, behind, in the box, on/under the table, above/below, between, among, over, 
   - 运动关系:  into/out of the room, across the river, along the street, past, through,
-- 其他介词:  with(=together, having, using), a book about animals, a cup of coffee, a book of mine, one of …, for为了, 
-- 复合介词:  due to, instead of, because of, in terms of , such as, as well as, according to, in spite of,
+- 其他介词:  
+  - with(=together和一起, having有, using用): 
+  - about关于: a book about animals, 
+  - of: a cup of coffee, a book of mine, one of …, 
+  - for: for为了, 
+  - as: as作为 a woman
+  - 其他: 
+- 复合介词:  
+  - due to,  according to,
+  - instead of, because of, 
+  - in terms of , in spite of,
+  - such as, as well as, 
 
-
-介词短语: 
-
-- for For example,
-- as: As a result,
-- with excitement,
+介词短语：作为定语、状语。连接词在句首。
+- for: For example,
 - to: to my surprise,
-- after all毕竟,
-- above all,
+- after: after all毕竟,
+- above: above all最重要的是,
 - by: by the way, by train， 
-- in: in addition, as well, in despair,
-- without difficulty,
-- in this way, in fact,
-- as a result, in addition, in conclusion, in general, in other words,
--  in detail, at random,
+- in: in addition, , in despair,
+- with: with excitement,
+- without: without difficulty,
+- in: in this way, in fact, in addition, in conclusion, in general, in other words,in detail
+- as: as a result,,, at random, as well
 
 ### 副词
 副词。句末可以按照顺序多个副词。或者其他形式（介词、动词）的状语。
