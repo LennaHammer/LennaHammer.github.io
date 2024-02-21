@@ -119,7 +119,8 @@ Would you like something to eat?
 - This is Harry Bennett. This is my wife Marilyn.
 - See you later.
 - Don't worry.
-
+描述人
+She's a smart young lady,
 
 ### 句型
 
@@ -131,10 +132,10 @@ Would you like something to eat?
   - I'm sure, I'm glad
   - understand why, ask if
 - 定语从句（who/which/that引导, 相当于形容词） people who, those who, the guy who, way, time, 经常出现在句尾。
-- 状语从句：用连词引导，出现在前面或者后面, 整体相当于副词 
+- 状语从句：用连词引导，在前或在后都可以, 整体相当于副词。 
 - 同位语 the fact that。类似定语从句。
 - 表语从句: the problem is …. , that's why... , that's because …,
-- 主语从句 it's … that …, What …. is …
+- 主语从句 it's … that …, What …. is …，What we try to avoid is，Whether this is profitable depends on ，
 
 特殊句式
 
@@ -142,11 +143,14 @@ Would you like something to eat?
   it's one o'clock. it's Sunday。
 - there be 句型(类似have)有: there were some people rowing on the river
 - 倒装（语序）句首是 地点介词, only, never
-- 比较句: more than, as ... as
+- 比较句: more than, as ... as，much better than you would expect
 - 建议: what about, would you like, why don't you...
 - 虚拟语气 if, wish,
 - 否定: I don’t think …, hardly, I don't know. It won't take me long at all.
 - 被动语态: be … by,
+
+In order for the configuration to work, you will need to make sure that
+
 
 ## 名词
 
@@ -172,7 +176,7 @@ like, hate,
 
 to do: 动词不定式, 作为动词后宾语（去做某事）。以及句尾目的状语（来做某事）、名词后定语（做某事的）。和介词to区分。也可能是用分词短语。
 - V + to do: try to, want to, used to, tend to, have to, start to, would like to
-- V + ... + to do: allow them to, enable … to …,encourage all students to
+- V + ... + to do: allow them to, enable … to …, encourage all students to
 - be + A + to do: be about to, be willing to, be glad to, be able to, be likely to,
   - it's + A + to do: 
 - V + wh- + to do: tell/know + what/how to …
@@ -189,6 +193,7 @@ doing
   - the pleasure of doing, 
   - without doing, instead of doing, before doing, 
   - insist on doing, be tired of being, have trouble doing
+作主语Removing rules results in a，
 
 done
 - 定语： a book called ..., 
@@ -212,20 +217,20 @@ done
 短语动词（动词+介词）。动词可以及物可以不及物。意思和动词有关。
 
 - at: loot at. laugh at,
-- about: talk about, tell me about,
+- about: talk about, tell me about, care about, think about, 
 - from: come from, derive from,  prevent from, benefit from,,
-- on: be based on, focus on,   depend on
+- on: be based on, focus on,   depend on, rely on, 
 - with: present with, struggle with, deal with 处理, provide with, start with, live with,replace with,mix with, agree with, 
 - in: result in, live in, put … in …, major in 主修,
 - to: lead to, go to, listen to, belong to, increase to,
-- of: accuse of, think of, dream of, remind ... of, get rid of, 
+- of: accuse of, think of想出, dream of, remind ... of, get rid of, 
 - for: ask for, look for, blame for,  wait for, admire for, thank for 
-- as: be referred to as, be known as,
+- as: be referred to as, be known as, act as, 
 - out of: get out of,
 - feel like,
 - go through,
 - turn into
-- take care of, look forward to , pay attention to 注意,come up with 想出, 提出 ；put up with 忍受, 容忍 ；get rid of, take advantage of 利用,
+- take care of, look forward to , pay attention to 注意,come up with 想出, 提出 ；put up with 忍受, 容忍 ；get rid of, take advantage of 利用, have a significant impact on，keep track of，take that into consideration.
 
 短语动词（动词+副词）。副词可以在宾语前或后。会构成新的意思。
 
@@ -239,16 +244,17 @@ done
 
 
 动宾短语（动词+名词）: 
-- have breakfast, sing songs, 
+- have breakfast, sing songs, forgot her bag, put out the fires,
 - lost his temper, 
 - make sure,
+- gain valuable experience，
 
 名词短语: 
 - a piece of paper, 
 - a red dress, a young lady, 
 - a book about history, 
 - a cup on the table, 
-- the phone number of the restaurant
+- the phone number of the restaurant, an important component of education, 
 
 动词名词化（书面语中）the ... of ...
 
@@ -260,18 +266,18 @@ done
 ### 介词
 介词, 在名词后, 动词后都可以。
 
-- 时间介词:  
-   - in: in June, in 1997, , In the past, In the 1960s,  in three days, in the end, 
+- 时间介词: 一次句子可以有多个时间状语。
+   - in: in June, in 1997, in the past, in the 1960s,  in three days, in the end, 
    - on: on Sunday, on Monday morning, 
    - at: at 9:00, at first, at once
    - for:  for three years, for the first time
-   - 时间区间: from … to …,since 1988, after breakfast, until lunchtime， 
-   - 时间（没有介词）:  this year, last week, these days, , all the time. so far, three days ago
+   - 时间区间: from … to …, since 1988, after breakfast, until lunchtime， 
+   - 时间（没有介词）:  this year, last week, these days, all the time. so far, three days ago
    - 频率（没有介词）once a week, each year, every time, every year,  two days a week, three times a week,
 - 地点介词: 
   - in:  in the world, in London, in the letter, in my room, 
   - on: on the floor, on the street,
-  - at: at home,at the airport, at our university.
+  - at: at home, at the airport, at our university.
   - 位置关系:  in front of, behind, in the box, on/under the table, above/below, between, among, over, 
   - 运动关系:  into/out of the room, across the river, along the street, past, through,
 - 其他介词:  
@@ -288,16 +294,17 @@ done
   - such as, as well as, 
 
 介词短语：作为定语、状语。连接词在句首。
-- for: For example,
+- at: at random
+- for: For example, for sure， 
 - to: to my surprise,
 - after: after all毕竟,
 - above: above all最重要的是,
 - by: by the way, by train， 
-- in: in addition, , in despair,
+- in: in addition, , in despair, In general，
 - with: with excitement,
 - without: without difficulty,
-- in: in this way, in fact, in addition, in conclusion, in general, in other words,in detail
-- as: as a result,,, at random, as well
+- in: in this way, in fact, in addition, in conclusion, in general, in other words,in detail，In contrast，
+- as: as a result, as well
 
 ### 副词
 副词。句末可以按照顺序多个副词。或者其他形式（介词、动词）的状语。
@@ -305,7 +312,7 @@ done
 - 时间副词: still, yet, late, early, again, ago, later, just, already, Suddenly, immediately, once,  regularly
   - 频率副词: never, always, ever, often, sometimes, rarely, normally,
 - 地点副词: here, there, outside,
-- 程度副词: very, extremely, a little, far,  completely, totally, absolutely, entirely, wholly, fully, thoroughly, quite, kind of, I know the owner very well.
+- 程度副词: very, extremely, a little, far, completely, totally, absolutely, entirely, wholly, fully, thoroughly, quite, kind of, I know the owner very well.
 - 方式副词（ly）: happily, fast, slowly, quickly, angrily, carefully,
 - 其他副词: almost, maybe, certainly, technically, probably, Actually, together, all, obviously,
 
@@ -323,7 +330,7 @@ done
 ### 形容词
 
 形容词, 系动词后, 名词前。
-- 相当于冠词: previous, another, next, following, recent, first, last, enough, 
+- 相当于冠词: previous, another, next, following, recent, first, last, enough, latest，
 - 情绪: surprised, worried, excited, interested, happy, sad, afraid, anxious, eager, keen, tired, exhausted, I'm tired and hungry.
 - 形容人的 beautiful, intelligent, wise, old, friendly, brave, 
   人的长相 tall，fat，young，old，
